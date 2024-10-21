@@ -20,10 +20,10 @@
   padding: 4rem 0;
   gap: 3rem;
   border-bottom: 2px solid;
+  border-color: #17171A;
   background-color: #17171A;
   color: #E07B67;
-  border: 1px solid red;
-  font-family: space-grotesk;
+  font-family: spaceGrotesk;
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 3.125rem;
@@ -56,11 +56,11 @@
   height: 60.5625rem;
   padding:5rem 0;
   gap: 2.5rem;
-  border: 1px solid red;
 }
 
 .box {
   display: flex;
+  flex-direction: column;
   width: 76rem;
   height: 15.1875rem;
   border: 2px solid;
@@ -73,4 +73,43 @@
 
 .box:hover {
   border-color: #E07B67; 
+}
+
+.date {
+  display: flex;
+  width: 71rem;
+  height: 2rem;
+  gap: 61.25rem;
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.21rem;
+  color: #E07B67; 
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 71rem;
+  height: 6.9375rem;
+  gap: 1rem;
+}
+
+.title{
+  width: 71rem;
+  height: 1.9375rem;
+  font-family: space-grotesk;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+.subtitle {
+  width: 71rem;
+  height: 4rem;
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #AFABB6;
 }
