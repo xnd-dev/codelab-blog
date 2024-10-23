@@ -29,7 +29,7 @@ export default function Home() {
           <div className={styles.date}>
             17 de ago, 2024 
             <Image
-              src={isFilled ? Heart1 : Heart2} 
+              src={isFilled ? Heart2 : Heart1} 
               alt="curtir"
               onClick={toggleIcon}
             />
@@ -46,7 +46,7 @@ export default function Home() {
           <div className={styles.date}>
             17 de ago, 2024 
             <Image 
-              src={isFilled ? Heart1 : Heart2} 
+              src={isFilled ? Heart2 : Heart1} 
               alt="curtir"
               onClick={toggleIcon} 
               />
@@ -62,7 +62,7 @@ export default function Home() {
           <div className={styles.date}>
             17 de ago, 2024 
             <Image 
-              src={isFilled ? Heart1 : Heart2} 
+              src={isFilled ? Heart2 : Heart1} 
               alt="curtir"
               onClick={toggleIcon}
               />
