@@ -113,3 +113,8 @@
   line-height: 2rem;
   color: #AFABB6;
 }
+
+.date Image {
+  width: 1.75rem;
+  height: 1.5rem;
+}

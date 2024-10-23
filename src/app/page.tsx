@@ -1,8 +1,18 @@
+'use client';
 import Image from "next/image";
-import Vector from '../../public/assets/Vector.svg'
+import Heart1 from '../../public/assets/heart.svg'
+import Heart2 from '../../public/assets/heart-active.svg'
 import styles from "./page.module.css";
+import { useState } from "react";
+
 
 export default function Home() {
+  const [isFilled, setIsFilled] = useState(false)
+
+  const toggleIcon = () => {
+    setIsFilled(!isFilled);
+  };
+
   return (
     <div className={styles.page}>
       <header className={styles.header}>
@@ -16,7 +26,15 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.box}>
-          <div className={styles.date}>17 de ago, 2024 <Image src={Vector} alt="curtir" /></div>
+          <div className={styles.date}>
+            17 de ago, 2024 
+            <Image
+              src={isFilled ? Heart1 : Heart2} 
+              alt="curtir"
+              onClick={toggleIcon}
+            />
+          </div>
+
           <div className={styles.content}>
             <h2 className={styles.title}>O que é linguagem de programação? Conheça as principais:</h2>
             <h3 className={styles.subtitle}>Uma das mais populares vertentes da tecnologia da informação,
@@ -25,7 +43,14 @@ export default function Home() {
         </div>
 
         <div className={styles.box}>
-          <div className={styles.date}>17 de ago, 2024 <Image src={Vector} alt="curtir" /></div>
+          <div className={styles.date}>
+            17 de ago, 2024 
+            <Image 
+              src={isFilled ? Heart1 : Heart2} 
+              alt="curtir"
+              onClick={toggleIcon} 
+              />
+          </div>
           <div className={styles.content}>
             <h2 className={styles.title}>GitHub agora permite fazer login sem precisar de senha.</h2>
             <h3 className={styles.subtitle}>O GitHub anunciou nesta quarta-feira (12) o acesso a partir das passkeys, método de autenticação sem senhas.
@@ -34,7 +59,14 @@ export default function Home() {
         </div>
 
         <div className={styles.box}>
-          <div className={styles.date}>17 de ago, 2024 <Image src={Vector} alt="curtir" /></div>
+          <div className={styles.date}>
+            17 de ago, 2024 
+            <Image 
+              src={isFilled ? Heart1 : Heart2} 
+              alt="curtir"
+              onClick={toggleIcon}
+              />
+          </div>
           <div className={styles.content}>
             <h2 className={styles.title}>Por que os hiperlinks são azuis em sua maioria?</h2>
             <h3 className={styles.subtitle}>Quem navega na internet, certamente já percebeu que ela conta com diversos recursos para tornar a nossa vida mais fácil.
