@@ -23,7 +23,7 @@
   border-color: #17171A;
   background-color: #17171A;
   color: #E07B67;
-  font-family: spaceGrotesk;
+  font-family: var(space-grotesk);
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 3.125rem;
@@ -80,7 +80,7 @@
   width: 71rem;
   height: 2rem;
   gap: 61.25rem;
-  font-family: inter;
+  font-family: var(inter);
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.21rem;
@@ -98,7 +98,7 @@
 .title{
   width: 71rem;
   height: 1.9375rem;
-  font-family: space-grotesk;
+  font-family: var(space-grotesk);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.875rem;
@@ -107,7 +107,7 @@
 .subtitle {
   width: 71rem;
   height: 4rem;
-  font-family: inter;
+  font-family: var(inter);
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 2rem;
